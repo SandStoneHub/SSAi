@@ -16,7 +16,13 @@ async def _gen(interaction: discord.Interaction, prompt: str):
         add(interaction.user.id, prompt)
         await interaction.response.defer()
         await asyncio.sleep(1)
-        await interaction.followup.send(gen_text(prompt))
+        result = gen_text(prompt)
+
+        if len(result) > 1999:
+            await interaction.followup.send("Привышен лимит символов", ephemeral=True)
+            return
+
+        await interaction.followup.send(result)
         
     
 @bot.event
