@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  <img src="img/Banner.png" style="width: 400px;"/>
+  <img src="img/banner.png" style="width: 400px;"/>
 </p>
 
 <h3 align="center"> 
