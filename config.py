@@ -1,0 +1,2 @@
+TOKEN = "DiscordTokenBot"
+GIGACHAT = "GigaChatToken"
